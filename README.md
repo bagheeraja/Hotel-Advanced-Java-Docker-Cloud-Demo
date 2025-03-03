@@ -61,6 +61,14 @@ Lines: 1-23
 Changes: WelcomeController establishes /welcome endpoint, accepts
 lang request parameter, and returns requested welcome message and http response.
 
+File Name: *app.component.html*
+Lines: 27-31
+Changes: HTML to retrieve and display the HTML Observables for the French and English Welcome messages
+
+File Name: *app.component.ts*
+Lines: 37-39
+Changes: Send GET requests to appropriate endpoints for French and English Welcome messages
+
 2.   Modify the front end to display the price for a reservation in currency rates for U.S. dollars ($), Canadian dollars (C$), and euros (€) on different lines.
 
 *Note: It is not necessary to convert the values of the prices.*
