@@ -89,14 +89,18 @@ Changes: Add variables for CAD and EUR prices
     a.  Write a Java method to convert times between eastern time (ET), mountain time (MT), and coordinated universal time (UTC) zones.
     b.  Use the time zone conversion method from part B3a to display a message stating the time in all three times zones in hours and minutes for an online, live presentation held at the Landon Hotel. The times should be displayed as ET, MT, and UTC.
 
-File Name: **
-Lines:
-Changes:
+File Name: *TimeZoneConvert.java*
+Lines: 1-18
+Changes: Create method getTime() that returns the time for the online presentation formatted and converted to EST, MST & UTC
+
+File Name: *TimeZoneConvertController.java*
+Lines: 1-19
+Changes: Create REST endpoint "onlinepres" to return the presentation announcement and an Http response.
 
 ##### Additional Changes beyond scope of Step B requirements
 
 File Name: *README.md*
-Lines: 3-94
+Lines: 31-104
 Changes: Updated README.md to include Change Log records for the project.
 
 #### C. Explain how you would deploy the Spring application with a Java back end and an Angular front end to cloud services and create a Dockerfile using the attached supporting document "How to Create a Docker Account" by doing the following:
