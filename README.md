@@ -73,9 +73,17 @@ Changes: Send GET requests to appropriate endpoints for French and English Welco
 
 *Note: It is not necessary to convert the values of the prices.*
 
-File Name: **
-Lines:
-Changes:
+File Name: *app.component.html*
+Lines: 87-89
+Changes: Updated Available Rooms table layout to include CAD and EUR prices in addition to US price.
+
+File Name: *app.component.ts*
+Lines: 65-69
+Changes: Add structure needed to display CAD & EUR prices without currency conversion.
+
+File Name: *app.component.ts*
+Lines: 118-120
+Changes: Add variables for CAD and EUR prices
 
 3.  Display the time for an online live presentation held at the Landon Hotel by doing the following:
     a.  Write a Java method to convert times between eastern time (ET), mountain time (MT), and coordinated universal time (UTC) zones.
