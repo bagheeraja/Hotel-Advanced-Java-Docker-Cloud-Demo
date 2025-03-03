@@ -31,6 +31,10 @@
       </div>
 
       <br>
+      <!-- Add functionality for online presentation announcement -->
+      <div class="scene" id="presentation">
+        <h1>{{onlinePresentation$ | async}}</h1>
+      </div>
 
 
       <div class="row">
@@ -83,10 +87,10 @@
                 </td>
                 <td>
                   <strong>Room #: {{room.roomNumber}}</strong><br/>
-                  <strong>Price: ${{room.price}}</strong><br>
+                  <strong>Price: USD ${{room.price}}</strong><br>
                   <!-- Add functionality for US dollars, Canadian dollars, and euros. -->
-                  <strong> Price: CA${{room.priceCAD}}</strong><br>
-                  <strong> Price: EUR€{{room.priceEUR}}</strong><br>
+                  <strong> Price: CA  ${{room.priceCAD}}</strong><br>
+                  <strong> Price: EUR €{{room.priceEUR}}</strong><br>
                 </td>
                 <td>
                   <button type="submit" class="btn btn-primary" (click)="reserveRoom(room.id)">Reserve</button>

@@ -13,7 +13,7 @@ public class TimeZoneConvertController {
 
     @GetMapping("/onlinepres")
     public ResponseEntity<String> presentationDisplay() {
-        String display = "Join us online for a live presentation on October 11, 2025, held at " + TimeZoneConvert.getTime();
+        String display = "Join us online October 11, 2025 for a live presentation at " + TimeZoneConvert.getTime();
         return new ResponseEntity<String> (display, HttpStatus.OK);
     }
 }

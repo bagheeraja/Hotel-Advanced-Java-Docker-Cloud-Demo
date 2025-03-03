@@ -97,6 +97,18 @@ File Name: *TimeZoneConvertController.java*
 Lines: 1-19
 Changes: Create REST endpoint "onlinepres" to return the presentation announcement and an Http response.
 
+File Name: *app.component.html*
+Lines: 34-37
+Changes: Add <div> for online presentation message
+
+File Name: *app.component.html*
+Lines: 90
+Changes: Add USD indicator to first price in table
+
+File Name: *app.component.ts*
+Lines: 22-23, 44-45
+Changes: Add onlinePresentation variable and Http GET request.
+
 ##### Additional Changes beyond scope of Step B requirements
 
 File Name: *README.md*

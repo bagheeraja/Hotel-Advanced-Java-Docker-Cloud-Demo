@@ -19,6 +19,9 @@ export class AppComponent implements OnInit{
   welcomeMessageEnglish$!: Observable<string>
   welcomeMessageFrench$!: Observable<string>
 
+  // Add functionality for online presentation message
+  onlinePresentation$!:Observable<string>
+
   constructor(private httpClient:HttpClient){}
 
   private baseURL:string='http://localhost:8080';
@@ -37,6 +40,9 @@ export class AppComponent implements OnInit{
       // Add functionality for Welcome message in English and French
       this.welcomeMessageFrench$ = this.httpClient.get(this.baseURL + '/welcome?lang=ca', {responseType: 'text'})
       this.welcomeMessageEnglish$ = this.httpClient.get(this.baseURL + '/welcome?lang=en', {responseType: 'text'})
+
+      // Add functionality for online presentation message
+      this.onlinePresentation$ = this.httpClient.get(this.baseURL + '/onlinepres', {responseType: 'text'})
 
       this.roomsearch= new FormGroup({
         checkin: new FormControl(' '),
