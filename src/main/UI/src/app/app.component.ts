@@ -3,6 +3,7 @@ import {FormControl, FormGroup} from '@angular/forms';
 import {HttpClient, HttpResponse,HttpHeaders} from "@angular/common/http";
 import { Observable } from 'rxjs';
 import {map} from "rxjs/operators";
+import {Location, LocationStrategy} from "@angular/common"; // import for deployed app, severed from port 8080
 
 
 
@@ -23,6 +24,12 @@ export class AppComponent implements OnInit{
   onlinePresentation$!:Observable<string>
 
   constructor(private httpClient:HttpClient){}
+
+  // constructor for deployed version that will be severed from port 8080
+  // constructor(private httpClient:HttpClient, private location:Location, private locationStrategy:LocationStrategy){}
+
+  // baseURL for deployed version that will be severed from port 8080
+  // private baseURL:string=this.location.path();
 
   private baseURL:string='http://localhost:8080';
 

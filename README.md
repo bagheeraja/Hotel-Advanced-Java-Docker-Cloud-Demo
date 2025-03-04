@@ -141,6 +141,11 @@ Changes: Screen captures included showing .jar file running in a Docker containe
 
 3.  Describe how you would deploy the current multithreaded Spring application to the cloud. Include the name of the cloud service provider you would use.
 
+File Name: D387_Deploy_to_Cloud.pdf
+
+File Name: *app.component.ts*
+Lines: 6, 28-29, 31-32
+Changes: Commented code added outlining changes necessary for cloud deployment
 
 #### D. Demonstrate professional communication in the content and presentation of your submission.
 
